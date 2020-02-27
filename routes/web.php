@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('submit', function () {
+Route::post('/submit', function () {
     return "OKEY";
 });
 
