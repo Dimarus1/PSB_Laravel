@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/pay/submit', function () {
-    return "OKEY";
+    return view('welcome');
 });
 
 
