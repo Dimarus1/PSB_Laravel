@@ -46,19 +46,20 @@ $key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2)))
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 
 // ТЕСТ Курл от олд шлюза
-dd($data);
+//dd($data);
 
 $ch = curl_init('https://test.3ds.payment.ru/cgi-bin/cgi_link' . http_build_query($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_HEADER, false);
+curl_setopt($ch, CURLOPT_POST, 1);
 $res = curl_exec($ch);
 curl_close($ch);
 $res = json_decode($res,1);
 if (empty($res['orderId'])){
     // Возникла ошибка:
     echo $res['errorMessage']; 
-	//echo $res;
+	echo ('NOT WORK');
                          
 } else {
     // Успех:
