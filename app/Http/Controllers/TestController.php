@@ -10,11 +10,13 @@ class TestController extends Controller {
 
     public function submit(Request $req) {
 
-        $ch = curl_init('https://jsonplaceholder.typicode.com/posts');
+        $data['da']=123;
+
+        $ch = curl_init('https://jsonplaceholder.typicode.com/posts' . http_build_query($data));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_HEADER, false);
-        //curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
         $res = curl_exec($ch);
         curl_close($ch);
         $res = json_decode($res,1);
