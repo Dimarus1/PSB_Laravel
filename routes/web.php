@@ -19,6 +19,4 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::post('/submit', function () {
-    dd(Request::all());
-});
+Route::post('/submit', 'SubmitController@submit');
