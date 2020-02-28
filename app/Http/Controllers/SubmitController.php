@@ -46,6 +46,7 @@ $key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2)))
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 
 // ТЕСТ Курл от олд шлюза
+dd($data);
 
 $ch = curl_init('https://test.3ds.payment.ru/cgi-bin/cgi_link' . http_build_query($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
