@@ -19,6 +19,6 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/submit', function () {
+Route::post('/submit', function () {
     return "WORKING!";
 });
