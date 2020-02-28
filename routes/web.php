@@ -20,5 +20,5 @@ Route::get('/test', function () {
 });
 
 Route::post('/submit', function () {
-    return "WORKING!";
+    dd(Request::all());
 });
