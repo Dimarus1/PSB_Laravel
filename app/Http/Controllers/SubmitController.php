@@ -67,7 +67,7 @@ if (empty($res['orderId'])){
     // Тут нужно сохранить ID платежа в своей БД - $res['orderId']
 
     // Перенаправление клиента на страницу оплаты.
-    header('Location: ' . $res['formUrl'], true);
+    header('Location: ' . 'zdravpay.ru', true);
        }
 
 
