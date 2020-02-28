@@ -59,7 +59,7 @@ curl_close($ch);
 //$res = json_decode($res,1);
 if (empty($res['orderId'])){
     // Возникла ошибка:
-    echo $res['errorMessage']; 
+    //echo $res['errorMessage']; 
 	echo ('NOT WORK');
                          
 } else {
