@@ -49,7 +49,7 @@ $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 //dd($data);
 //
 
-$ch = curl_init('http://zdravpay.ru/test' . http_build_query($data));
+$ch = curl_init('https://jsonplaceholder.typicode.com/posts' . http_build_query($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_HEADER, false);
