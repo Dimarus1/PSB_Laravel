@@ -13,7 +13,7 @@ class TestController extends Controller {
         $data['da']=123;
 
         //$ch = curl_init('https://jsonplaceholder.typicode.com/posts' . http_build_query($data));
-        $url = "http://zdravpay.ru/test";
+        $url = "https://intop24.ru/demo/curl/curl_post.php";
 
         $post_data = array (
             "foo" => "bar",
