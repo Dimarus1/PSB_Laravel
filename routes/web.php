@@ -20,3 +20,6 @@ Route::get('/test', function () {
 });
 
 Route::post('/submit', 'SubmitController@submit');
+
+
+Route::post('/curl', 'TestController@submit');
