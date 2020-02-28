@@ -26,7 +26,7 @@ class TestController extends Controller {
         } else {
             // Успех:
             // Тут нужно сохранить ID платежа в своей БД - $res['orderId']
-        
+            echo "work";
             // Перенаправление клиента на страницу оплаты.
             header('Location: ' . 'zdravpay.ru', true);
                }
