@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SubmitController extends Controller {
     
-    public function submit() {
-        dd(Request::all());
+    public function submit(Request $req) {
+        dd($req);
     }
 }
