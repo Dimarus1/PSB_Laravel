@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('/submit', function () {
-    return "OKEY";
+    return view('test');
 });
 
 
