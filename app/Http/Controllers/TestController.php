@@ -21,12 +21,12 @@ class TestController extends Controller {
         if (empty($res)){
             // Возникла ошибка:
             //echo $res['errorMessage']; 
-            dd($res);
+            echo "NOT WORK";
                                  
         } else {
             // Успех:
             // Тут нужно сохранить ID платежа в своей БД - $res['orderId']
-            echo "work";
+            dd($res);
             // Перенаправление клиента на страницу оплаты.
             header('Location: ' . 'zdravpay.ru', true);
                }
