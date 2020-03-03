@@ -15,11 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
+Route::post('/test', function () {
     return view('test');
 });
-
-Route::post('/submit', 'SubmitController@submit');
-
-
-Route::get('/curl', 'TestController@submit');
