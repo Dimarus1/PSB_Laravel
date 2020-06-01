@@ -16,7 +16,6 @@ class CreatePSBLaravelsTable extends Migration
         Schema::create('p_s_b_laravels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('AMOUNT');
-           /*
             $table->text('CURRENCY');
             $table->text('ORDER');
             $table->text('DESC');
@@ -39,8 +38,6 @@ class CreatePSBLaravelsTable extends Migration
             $table->text('CARD');
             $table->text('CHANNEL');
             $table->text('ADDINFO');
-            */
-
         });
     }
 
