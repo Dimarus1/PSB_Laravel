@@ -22,7 +22,7 @@ class CreatePSBLaravelsTable extends Migration
             $table->string('MERCH_NAME');
             $table->string('MERCHANT');
             $table->string('TERMINAL');
-            $table->string('EMAIL');
+            $table->string('E_MAIL');
             $table->string('TRTYPE');
             $table->string('TIMESTAMP');
             $table->string('NONCE');
