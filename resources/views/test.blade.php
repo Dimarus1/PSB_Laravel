@@ -11,16 +11,16 @@ $data = [
 'desc' => 'www.zdravkurort.ru  '. $_POST['orderNumber'],
 'terminal' => '79036777',
 'trtype' => '1',
-'merch_name' => 'ZDRAVKURORT.RU',
-'merchant' => '000599979036777',
-'email' => 'cardholder@mail.test',
+'merch_name' => 'TEST_MERCH',
+'merchant' => '790367686219999',
+'email' => 'da@zdravkurort.ru',
 'timestamp' => gmdate("YmdHis"),
 'nonce' => bin2hex(random_bytes(16)),
-'backref' => 'https://' . $_SERVER['SERVER_NAME'] . '/backref.php',
-'notify_url' => 'https://' . $_SERVER['SERVER_NAME'] . '/notify.php',
+'backref' => 'https://' . 'zdravkurort.ru',
+'notify_url' => 'https://' . 'zdravkurort.ru',
 'cardholder_notify' => 'EMAIL',
 'merchant_notify' => 'EMAIL',
-'merchant_notify_email' => 'merchant@mail.test'
+'merchant_notify_email' => 'da@zdravkurort.ru'
 ];
 //Расчет P_SIGN
 $vars = ["amount","currency","order","merch_name","merchant","terminal","email","trtype","timestamp","nonce","backref"];
