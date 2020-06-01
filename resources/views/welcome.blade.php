@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Pay Zdravkurort</title>
+    <title>Здравкурорт оплата картой</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
           <div class="card-body">
 		  <img src="logozd.png" class="img-fluid img-thumbnail" alt="zdravkurort">
             <H5 class="card-title">Введите данные бронирования</H5>		  
-                <form action="/test" method="post">
+                <form action="/back" method="post">
                 @csrf
 				<div class="form-group">
 				<label for="order"></label>
