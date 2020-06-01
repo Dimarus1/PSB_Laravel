@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::post('/test', function () {
     return view('test');
 });
+
+Route::post('/back', function () {
+    return view('back');
+});
