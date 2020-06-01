@@ -25,5 +25,6 @@ $file = 'notification_auth_' . bin2hex(random_bytes(5)). '.txt';
  $message = implode("\n",$params);
  file_put_contents($file,$message,FILE_APPEND);
  }
+ dd($params)
  }
 }

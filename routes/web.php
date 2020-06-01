@@ -19,6 +19,11 @@ Route::post('/test', function () {
     return view('test');
 });
 
+
 Route::post('/back', function () {
-    return view('back');
+    dd(Request::all());
+});
+
+Route::get('/chek', function () {
+    return view('chek');
 });
