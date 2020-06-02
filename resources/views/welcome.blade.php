@@ -15,7 +15,7 @@
           <div class="card-body">
 		  <img src="logozd.png" class="img-fluid img-thumbnail" alt="zdravkurort">
             <H5 class="card-title">Введите данные бронирования</H5>		  
-                <form action="/back" method="post">
+                <form action="{{ route('test-form') }}" method="post">
                 @csrf
 				<div class="form-group">
 				<label for="order"></label>
@@ -31,11 +31,7 @@
 				<input id="email" type="email" name="email" class="form-control-sm" placeholder="адрес E-mail">
 				<small id="emailHelp" class="form-text text-muted">E-mail для получения чека об оплате</small>
 				</div>
-				<div class="form-group">
-				<label for="phone"></label>
-				<input id="phone" type="number" name="phone" class="form-control-sm" placeholder="Номер телефона">
-				<small id="emailHelp" class="form-text text-muted">Укажите номер телефона в формате 79990000001</small>
-				</div>
+
 				<div class="form-group">				
 				<button class="btn btn-success" type="submit">К оплате</button>
 				</div>

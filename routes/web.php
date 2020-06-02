@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::post('/test', function () {
     return view('test');
-});
+})->name('test-form');
 
 
 Route::post('/back', 'PSBController@DMcommit');
