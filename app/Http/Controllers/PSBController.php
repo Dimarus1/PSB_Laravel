@@ -36,7 +36,7 @@ class PSBController extends Controller {
     $DBPush->ADDINFO = $req->input('ADDINFO');
 
     $DBPush->save();
-    return redirect()->route('home');
+    return redirect()->route('/');
  }
 
 

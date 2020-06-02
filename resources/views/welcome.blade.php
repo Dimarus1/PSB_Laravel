@@ -15,8 +15,8 @@
           <div class="card-body">
 		  <img src="logozd.png" class="img-fluid img-thumbnail" alt="zdravkurort">
             <H5 class="card-title">Введите данные бронирования</H5>		  
-			<!--<form action="{{ route('test-form') }}" method="post">-->
-				<form action="/back" method="post">
+			<form action="{{ route('test-form') }}" method="post">
+				<!--<form action="/back" method="post">-->
                 @csrf
 				<div class="form-group">
 				<label for="ORDER"></label>
@@ -28,8 +28,8 @@
 				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="цена 10000" min="1" required>
 				</div>
 				<div class="form-group">
-				<label for="DESC"></label>
-				<input id="DESC" type="DESC" name="DESC" class="form-control-sm" placeholder="адрес E-mail">
+				<label for="EMAIL"></label>
+				<input id="EMAIL" type="EMAIL" name="EMAIL" class="form-control-sm" placeholder="адрес E-mail">
 				<small id="emailHelp" class="form-text text-muted">E-mail для получения чека об оплате</small>
 				</div>
 
