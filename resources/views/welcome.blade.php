@@ -19,16 +19,16 @@
 				<form action="/back" method="post">
                 @csrf
 				<div class="form-group">
-				<label for="order"></label>
-				<input id="order" type="text" name="order" class="form-control-lg" placeholder="Номер заказа AA000001" required>
+				<label for="ORDER"></label>
+				<input id="ORDER" type="text" name="ORDER" class="form-control-lg" placeholder="Номер заказа AA000001" required>
 				<small id="emailHelp" class="form-text text-muted"><b class="text-danger">Внимание! Оплачивайте заказ только после подтверждения!</b></small>
 				</div>
 				<div class="form-group">
-				<label for="amnt"></label>
-				<input id="amnt" type="number" name="amount" class="form-control-lg" placeholder="цена 10000" min="1" required>
+				<label for="AMOUNT"></label>
+				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="цена 10000" min="1" required>
 				</div>
 				<div class="form-group">
-				<label for="email"></label>
+				<label for="DESC"></label>
 				<input id="DESC" type="DESC" name="DESC" class="form-control-sm" placeholder="адрес E-mail">
 				<small id="emailHelp" class="form-text text-muted">E-mail для получения чека об оплате</small>
 				</div>
