@@ -15,7 +15,8 @@
           <div class="card-body">
 		  <img src="logozd.png" class="img-fluid img-thumbnail" alt="zdravkurort">
             <H5 class="card-title">Введите данные бронирования</H5>		  
-                <form action="{{ route('test-form') }}" method="post">
+			<!--<form action="{{ route('test-form') }}" method="post">-->
+				<form action="/back" method="post">
                 @csrf
 				<div class="form-group">
 				<label for="order"></label>

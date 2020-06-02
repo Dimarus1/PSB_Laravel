@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use PSBLaravel;
+use App\PSBLaravel;
 
 class PSBController extends Controller {
     
