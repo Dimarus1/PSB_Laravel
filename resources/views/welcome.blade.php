@@ -29,7 +29,7 @@
 				</div>
 				<div class="form-group">
 				<label for="email"></label>
-				<input id="email" type="email" name="email" class="form-control-sm" placeholder="адрес E-mail">
+				<input id="DESC" type="DESC" name="DESC" class="form-control-sm" placeholder="адрес E-mail">
 				<small id="emailHelp" class="form-text text-muted">E-mail для получения чека об оплате</small>
 				</div>
 
