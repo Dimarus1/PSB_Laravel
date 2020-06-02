@@ -20,7 +20,7 @@
                 @csrf
 				<div class="form-group">
 				<label for="order"></label>
-				<input id="order" type="text" name="orderNumber" class="form-control-lg" placeholder="Номер заказа AA000001" required>
+				<input id="order" type="text" name="order" class="form-control-lg" placeholder="Номер заказа AA000001" required>
 				<small id="emailHelp" class="form-text text-muted"><b class="text-danger">Внимание! Оплачивайте заказ только после подтверждения!</b></small>
 				</div>
 				<div class="form-group">
