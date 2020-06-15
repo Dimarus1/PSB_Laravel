@@ -45,7 +45,8 @@ class PSBController extends Controller {
    }
 
    public function AllData (){
-      return view('databd', ['data' => PSBLaravel::all()]);
+      $dt = new PSBLaravel;
+      return view('databd', ['data' => $dt->orderBy('id', 'desc')->get()]);
    }
 
 }
