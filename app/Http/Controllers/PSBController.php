@@ -9,7 +9,7 @@ class PSBController extends Controller {
     
  public function DMcommit (Request $req){
 
-    $DBPush = new PSBLaravel();
+    /*$DBPush = new PSBLaravel();
     
     $DBPush->AMOUNT = $req->input('AMOUNT');
     $DBPush->CURRENCY = $req->input('CURRENCY');
@@ -36,7 +36,8 @@ class PSBController extends Controller {
     $DBPush->ADDINFO = $req->input('ADDINFO');
 
     $DBPush->save();
-    return redirect()->route('/');
+    return redirect()->route('/');*/
+    return dd($req);
  }
 
 
