@@ -37,7 +37,7 @@ class PSBController extends Controller {
 
     $DBPush->save();
     return redirect()->route('/');*/
-    return dd($req);
+    return $req;
  }
 
 
