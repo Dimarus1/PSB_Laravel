@@ -9,7 +9,7 @@ class PSBController extends Controller {
     
  public function DMcommit (Request $req){
 
-     if ($req->input('P_SIGN') != NULL) {
+     if ($req->input('ORDER') != NULL) {
          
          $DBPush = new PSBLaravel();
          
