@@ -44,5 +44,8 @@ class PSBController extends Controller {
     
    }
 
+   public function AllData (){
+      return view('databd', ['data' => PSBLaravel::all()]);
+   }
 
 }

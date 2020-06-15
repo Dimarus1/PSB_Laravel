@@ -22,6 +22,4 @@ Route::post('/test', function () {
 
 Route::post('/back', 'PSBController@DMcommit');  /* post */
 
-Route::get('/chek', function () {
-    return view('chek');
-});
+Route::get('/chek', 'PSBController@AllData');
