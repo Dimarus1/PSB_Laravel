@@ -20,7 +20,7 @@ Route::post('/test', function () {
 })->name('test-form');
 
 
-Route::get('/back', 'PSBController@DMcommit');  /* post */
+Route::post('/back', 'PSBController@DMcommit');  /* post */
 
 Route::get('/chek', function () {
     return view('chek');
