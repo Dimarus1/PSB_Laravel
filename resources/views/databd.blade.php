@@ -13,6 +13,7 @@
 <h3>{{ $el->id }}</h3>
 <p>{{ $el->EMAIL }}</p>
 <p><small>{{ $el->created_at }}</small></p>
+</div>
 @endforeach
 
 
