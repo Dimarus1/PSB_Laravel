@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
 <H1>Все Записи</H1>
 @foreach($data as $el)
 <div class="alert alert-info">
@@ -17,6 +18,6 @@
 @endforeach
 
 
-
+</div>
 </body>
 </html>
