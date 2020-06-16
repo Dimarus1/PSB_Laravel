@@ -12,7 +12,7 @@
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
 $data = [
-'order' => $el->ORDER,
+/*'order' => $el->ORDER,
 'amount' => $el->AMOUNT,
 'currency' => $el->CURRENCY,
 'org_amount' => '',
@@ -24,7 +24,21 @@ $data = [
 'email' => $el->EMAIL,
 'merchant_notify' => 'client@zdravkurort.ru',
 'merchant_notify_email' => 'client@zdravkurort.ru',
-'notify_url' => 'https://pay.zdravkurort.ru/back',
+'notify_url' => 'https://pay.zdravkurort.ru/back',*/
+
+  'order' => '620749153',
+  'amount' => number_format('300',2,'.',''),
+  'currency' => 'RUB',
+  'org_amount' => number_format('300',2,'.',''),
+  'rrn' => '911491440337',
+  'int_ref' => '1ED52C3B234CBAF8',
+  'terminal' => '79036777',
+  'trtype' => '14',
+  'cardholder_notify' => 'EMAIL',
+  'email' => 'cardholder@mail.test',
+  'merchant_notify' => 'EMAIL',
+  'merchant_notify_email' => 'merchant@mail.test',
+  'notify_url' => 'https://' . $_SERVER['SERVER_NAME'] . '/back.php',
   'timestamp' => gmdate("YmdHis"),
   'nonce' => bin2hex(random_bytes(16))
   ];
