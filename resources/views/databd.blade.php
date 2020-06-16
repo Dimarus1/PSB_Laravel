@@ -17,7 +17,7 @@
   <h3>{{ $el->ORDER }}</h3>
   <p>{{ $el->AMOUNT }}</p>
   <p>{{ $el->DESC }}</p>
-  <p>{{ $el->RCTEXT }} -> {{ $el->TRTYPE }} Успешная операция (1 - Оплата, 14 - Возврат денег)</p>
+  <p><big>{{ $el->RCTEXT }} ->  {{ $el->TRTYPE }} <- Успешная операция (1 - Оплата, 14 - Возврат денег)</big></p>
   <p><small>{{ $el->created_at }}</small></p>
   <a href="{{ route('OneDatal', $el->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
   </div>
@@ -26,7 +26,7 @@
   <h3>{{ $el->ORDER }}</h3>
   <p>{{ $el->AMOUNT }}</p>
   <p>{{ $el->DESC }}</p>
-  <p>{{ $el->RCTEXT }} -> {{ $el->TRTYPE }} Не успешная операция (1 - Оплата, 14 - Возврат денег)</p>
+  <p>{{ $el->RCTEXT }} ->  {{ $el->TRTYPE }} <- Не успешная операция (1 - Оплата, 14 - Возврат денег)</p>
   <p><small>{{ $el->created_at }}</small></p>
   <a href="{{ route('OneDatal', $el->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
   </div>
