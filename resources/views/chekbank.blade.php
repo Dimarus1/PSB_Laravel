@@ -2,15 +2,15 @@
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
 $data = [
-    'amount' => '1200.00',
-    'currency' => 'EUD',
-    'order' => '935021467',
-    'desc' => 'Test payment',
-    'terminal' => '79036777',
-    'trtype' => '1',
-    'merch_name' => 'Test Shop',
-    'merchant' => '000599979036777',
-    'email' => 'cardholder@mail.test',
+    'amount' => $el->AMOUNT,
+    'currency' => $el->CURRENCY,
+    'order' => $el->ORDER,
+    'desc' => $el->DESC,
+    'terminal' => $el->TERMINAL,
+    'trtype' => $el->TRTYPE,
+    'merch_name' => $el->MERCH_NAME,
+    'merchant' => $el->MERCHANT,
+    'email' => $el->EMAIL,
     'timestamp' => gmdate("YmdHis"),
     'nonce' => bin2hex(random_bytes(16))
 ];
