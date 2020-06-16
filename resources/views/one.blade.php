@@ -37,7 +37,7 @@
 <p>{{ $data->ADDINFO }}     -------ADDINFO</p>
 <p><small>{{ $data->created_at }}</small></p>
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке</button></a>
-<a href="{{ route('Bank', $data->id) }}"><button class="btn btn-danger">ПРОВЕРИТЬ в банке</button></a>  
+<a href="{{ route('Ref', $data->id) }}"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ</button></a>  
 </div>
 
 

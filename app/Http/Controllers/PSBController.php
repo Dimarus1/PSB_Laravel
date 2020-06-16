@@ -40,7 +40,7 @@ class PSBController extends Controller {
          $DBPush->save();
          return redirect()->route('/');
       }  
-      return ("Error If Else");
+      return ("Error Save DB -> Else");
 
    }
 
@@ -57,6 +57,11 @@ class PSBController extends Controller {
    public function ChekBank ($id){//Проверка оплаты через сервис банка
       $dt = new PSBLaravel;
       return view('chekbank', ['el' => $dt->find($id)]);
+   }
+
+   public function RefundMoney ($id){//Возврат денег Клиенту
+      $dt = new PSBLaravel;
+      return view('refund', ['el' => $dt->find($id)]);
    }
 
 }
