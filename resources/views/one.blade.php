@@ -15,31 +15,31 @@
 <p>{{ $data->DESC }}    Описание</p>
 <p>{{ $data->AMOUNT }}  Оплаченная сумма</p>
 <p>{{ $data->CURRENCY }}  валюта</p>
-<p>{{ $data->P_SIGN }}</p>
+<p>{{ $data->RCTEXT }}  Успешно или нет</p>
 <p>{{ $data->CARD }}  Карта клиента</p>
 <p>{{ $data->EMAIL }}</p>
 <p>{{ $data->id }}  id в базе</p>
 <p>{{ $data->TIMESTAMP }} дата время</p>
-<p>{{ $data->INT_REF }}</p>
-<p>{{ $data->MERCH_NAME }}</p>
-<p>{{ $data->MERCHANT }}</p>
-<p>{{ $data->TERMINAL }}</p>
-<p>{{ $data->AUTHCODE }}</p>
+<p>{{ $data->INT_REF }}    INT_REF</p>
+<p>{{ $data->MERCH_NAME }}     MERCH_NAME</p>
+<p>{{ $data->MERCHANT }}      MERCHANT</p>
+<p>{{ $data->TERMINAL }}     TERMINAL</p>
+<p>{{ $data->AUTHCODE }}     AUTHCODE</p>
 <p>{{ $data->TRTYPE }}  Trtype</p>
 
-<p>{{ $data->NONCE }}</p>
-<p>{{ $data->BACKREF }}</p>
+<p>{{ $data->NONCE }}     NONCE</p>
+<p>{{ $data->BACKREF }}    BACKREF</p>
 <p>{{ $data->RESULT }} Результат</p>
-<p>{{ $data->RC }}</p>
-<p>{{ $data->RCTEXT }}</p>
+<p>{{ $data->RC }}     RC</p>
 
-<p>{{ $data->RRN }}</p>
+<p>{{ $data->P_SIGN }}    P_SIGN</p>
+<p>{{ $data->RRN }}    RRN</p>
 
 
-<p>{{ $data->NAME }}</p>
+<p>{{ $data->NAME }}    NAME</p>
 
-<p>{{ $data->CHANNEL }}</p>
-<p>{{ $data->ADDINFO }}</p>
+<p>{{ $data->CHANNEL }}     CHANNEL</p>
+<p>{{ $data->ADDINFO }}     ADDINFO</p>
 
 <p><small>{{ $data->created_at }}</small></p>
 <a href="{{ route('OneDatal', $data->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
