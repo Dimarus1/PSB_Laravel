@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
 
 <?php
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
 $data = [
   'order' => $el->ORDER,
-  'amount' => 666.00,
+  'amount' => $el->AMOUNT,
   'currency' => $el->CURRENCY,
-  'org_amount' => 666.00,
+  'org_amount' => $el->AMOUNT,
   'rrn' => $el->RRN,
   'int_ref' => $el->INT_REF,
   'terminal' => $el->TERMINAL,
@@ -67,5 +68,6 @@ $data = [
 
 ?>
 
+</div>
 </body>
 </html>
