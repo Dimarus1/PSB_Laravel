@@ -63,7 +63,7 @@ $data = [
   return curl_error($ch);
   }
   curl_close($ch);
-  dd($response);
+  echo($response);
 
 ?>
 
