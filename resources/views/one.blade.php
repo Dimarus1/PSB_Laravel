@@ -15,7 +15,7 @@
 <p>{{ $data->DESC }}    Описание</p>
 <p>{{ $data->AMOUNT }}  Оплаченная сумма</p>
 <p>{{ $data->CURRENCY }}  валюта</p>
-
+<p>{{ $data->P_SIGN }}</p>
 <p>{{ $data->CARD }}  Карта клиента</p>
 <p>{{ $data->EMAIL }}</p>
 <p>{{ $data->id }}  id в базе</p>
@@ -35,7 +35,7 @@
 
 <p>{{ $data->RRN }}</p>
 
-<p>{{ $data->P_SIGN }}</p>
+
 <p>{{ $data->NAME }}</p>
 
 <p>{{ $data->CHANNEL }}</p>
