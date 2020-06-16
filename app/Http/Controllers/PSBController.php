@@ -51,7 +51,7 @@ class PSBController extends Controller {
 
    public function OneData (){
       $dt = new PSBLaravel;
-      return view('one', ['data' => $dt->find('$id')]);
+      return view('one', ['data' => $dt->find($id)]);
    }
 
 }
