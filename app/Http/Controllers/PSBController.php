@@ -56,7 +56,7 @@ class PSBController extends Controller {
 
    public function ChekBank ($id){//Проверка оплаты через сервис банка
       $dt = new PSBLaravel;
-      return view('chekbank', ['data' => $dt->find($id)]);
+      return view('chekbank', ['el' => $dt->find($id)]);
    }
 
 }

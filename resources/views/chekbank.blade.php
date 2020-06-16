@@ -2,15 +2,15 @@
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
 $data = [
-'amount' => $data->amount,
-'currency' => $data->currency,
-'order' => $data->order,
-'desc' => $data->desc,
-'terminal' => $data->terminal,
-'trtype' => $data->trtype,
-'merch_name' => $data->merch_name,
-'merchant' => $data->merchant,
-'email' => $data->email,
+'amount' => $el->amount,
+'currency' => $el->currency,
+'order' => $el->order,
+'desc' => $el->desc,
+'terminal' => $el->terminal,
+'trtype' => $el->trtype,
+'merch_name' => $el->merch_name,
+'merchant' => $el->merchant,
+'email' => $el->email,
 'timestamp' => gmdate("YmdHis"),
 'nonce' => bin2hex(random_bytes(16))
 ];
