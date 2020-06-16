@@ -2,9 +2,9 @@
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
 $data = [
-'amount' => $el->amount,
+'amount' => '1200.00',
 'currency' => $el->currency,
-'order' => $el->order,
+'order' => '935021467',
 'desc' => $el->desc,
 'terminal' => $el->terminal,
 'trtype' => $el->trtype,
