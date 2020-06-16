@@ -11,32 +11,33 @@
 <H1>Одна запись</H1>
 
 <div class="alert alert-info">
-<h3>{{ $data->ORDER }}</h3>
-<p>{{ $data->DESC }}</p>
-<p>{{ $data->AMOUNT }}</p>
-<p>{{ $data->CURRENCY }}</p>
-<p>{{ $data->AUTHCODE }}</p>
-<p>{{ $data->EMAIL }}</p>
-<p>{{ $data->id }}</p>
-<p>{{ $data->TIMESTAMP }}</p>
+<h3>{{ $data->ORDER }} Номер заказа</h3>
+<p>{{ $data->DESC }}    Описание</p>
+<p>{{ $data->AMOUNT }}  Оплаченная сумма</p>
+<p>{{ $data->CURRENCY }}  валюта</p>
 
+<p>{{ $data->CARD }}  Карта клиента</p>
+<p>{{ $data->EMAIL }}</p>
+<p>{{ $data->id }}  id в базе</p>
+<p>{{ $data->TIMESTAMP }} дата время</p>
+<p>{{ $data->INT_REF }}</p>
 <p>{{ $data->MERCH_NAME }}</p>
 <p>{{ $data->MERCHANT }}</p>
 <p>{{ $data->TERMINAL }}</p>
-
-<p>{{ $data->TRTYPE }}</p>
+<p>{{ $data->AUTHCODE }}</p>
+<p>{{ $data->TRTYPE }}  Trtype</p>
 
 <p>{{ $data->NONCE }}</p>
 <p>{{ $data->BACKREF }}</p>
-<p>{{ $data->RESULT }}</p>
+<p>{{ $data->RESULT }} Результат</p>
 <p>{{ $data->RC }}</p>
 <p>{{ $data->RCTEXT }}</p>
 
 <p>{{ $data->RRN }}</p>
-<p>{{ $data->INT_REF }}</p>
+
 <p>{{ $data->P_SIGN }}</p>
 <p>{{ $data->NAME }}</p>
-<p>{{ $data->CARD }}</p>
+
 <p>{{ $data->CHANNEL }}</p>
 <p>{{ $data->ADDINFO }}</p>
 
