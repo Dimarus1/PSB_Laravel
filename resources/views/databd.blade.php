@@ -20,7 +20,7 @@
 </div>
 
 
-@if ({{ $el->RCTEXT }} == 'Approved')
+@if ({{ $el->RCTEXT }} = 'Approved')
   <div class="alert alert-success">
   <h3>{{ $el->ORDER }}</h3>
   <p>{{ $el->AMOUNT }}</p>
