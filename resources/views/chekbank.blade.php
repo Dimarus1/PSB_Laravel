@@ -50,5 +50,10 @@ return curl_error($ch);
 }
 curl_close($ch);
 echo $response;
-echo '</br>' . 'TRRRRRRR' . ($el->ORDER) . 'RTTTTTTT';
+echo '</br></br></br>';
+echo '<div class="alert alert-info"><h3>';
+echo 'Если есть ответ JSON с данными, Платеж найден в базе ';
+echo '</br></br></br>';
+echo 'Если ответ JSON пустой {}, Платеж не найден в базе ';
+echo '</h3></div>';
 ?>
