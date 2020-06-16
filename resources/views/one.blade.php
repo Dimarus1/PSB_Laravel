@@ -36,7 +36,7 @@
 <p>{{ $data->CHANNEL }}     -------CHANNEL</p>
 <p>{{ $data->ADDINFO }}     -------ADDINFO</p>
 <p><small>{{ $data->created_at }}</small></p>
-<a href="{{ route('chekbank', $data->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
+<a href="{{ route('Bank', $data->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
 </div>
 
 
