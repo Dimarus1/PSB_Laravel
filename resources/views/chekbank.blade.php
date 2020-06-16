@@ -50,5 +50,5 @@ return curl_error($ch);
 }
 curl_close($ch);
 echo $response;
-echo '</br>' . 'TRRRRRRR' . ($el->order) . 'RTTTTTTT';
+echo '</br>' . 'TRRRRRRR' . ($el->ORDER) . 'RTTTTTTT';
 ?>
