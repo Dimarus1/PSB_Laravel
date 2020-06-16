@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Здравкурорт оплата картой</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
 <?php
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
 $comp2 = '00000000000000000000000000000000';
@@ -57,3 +67,6 @@ echo '</br></br></br>';
 echo 'Если ответ JSON пустой {}, Платеж не найден в базе ';
 echo '</h3></div>';
 ?>
+
+</body>
+</html>
