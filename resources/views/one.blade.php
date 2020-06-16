@@ -11,23 +11,27 @@
 <H1>Одна запись</H1>
 
 <div class="alert alert-info">
-<h3>{{ $data->id }}</h3>
+<h3>{{ $data->ORDER }}</h3>
+<p>{{ $data->DESC }}</p>
 <p>{{ $data->AMOUNT }}</p>
 <p>{{ $data->CURRENCY }}</p>
-<p>{{ $data->ORDER }}</p>
-<p>{{ $data->DESC }}</p>
+<p>{{ $data->AUTHCODE }}</p>
+<p>{{ $data->EMAIL }}</p>
+<p>{{ $data->id }}</p>
+<p>{{ $data->TIMESTAMP }}</p>
+
 <p>{{ $data->MERCH_NAME }}</p>
 <p>{{ $data->MERCHANT }}</p>
 <p>{{ $data->TERMINAL }}</p>
-<p>{{ $data->EMAIL }}</p>
+
 <p>{{ $data->TRTYPE }}</p>
-<p>{{ $data->TIMESTAMP }}</p>
+
 <p>{{ $data->NONCE }}</p>
 <p>{{ $data->BACKREF }}</p>
 <p>{{ $data->RESULT }}</p>
 <p>{{ $data->RC }}</p>
 <p>{{ $data->RCTEXT }}</p>
-<p>{{ $data->AUTHCODE }}</p>
+
 <p>{{ $data->RRN }}</p>
 <p>{{ $data->INT_REF }}</p>
 <p>{{ $data->P_SIGN }}</p>
