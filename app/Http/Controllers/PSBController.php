@@ -9,7 +9,7 @@ class PSBController extends Controller {
     
  public function DMcommit (Request $req){
 
-     /*if ($req->input('ORDER') != NULL) {
+     if ($req->input('ORDER') != NULL) {
          
          $DBPush = new PSBLaravel();
          
@@ -40,11 +40,11 @@ class PSBController extends Controller {
          $DBPush->save();
          return redirect()->route('/');
       }  
-      return ("Error If Else");*/
+      return ("Error If Else");
     
 
 
-
+/*
       if (isset($_POST['P_SIGN'])) {
          $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
          $comp2 = '00000000000000000000000000000000';
@@ -68,7 +68,7 @@ class PSBController extends Controller {
             file_put_contents($file,$message,FILE_APPEND);
             }
             }
-            }
+            }*/
 
       /*Конец контроллера */
    }
