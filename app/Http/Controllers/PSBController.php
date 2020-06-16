@@ -49,7 +49,7 @@ class PSBController extends Controller {
       return view('databd', ['data' => $dt->orderBy('id', 'desc')->get()]);
    }
 
-   public function OneData (){
+   public function OneData ($id){
       $dt = new PSBLaravel;
       return view('one', ['data' => $dt->find($id)]);
    }
