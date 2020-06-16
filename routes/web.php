@@ -25,3 +25,5 @@ Route::post('/back', 'PSBController@DMcommit');  /* post */
 Route::get('/chek', 'PSBController@AllData');
 
 Route::get('/chek/{id}', 'PSBController@OneData')->name('OneDatal');
+
+Route::get('/chekbank', 'PSBController@ChekBank')->name('Bank');

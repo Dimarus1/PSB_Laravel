@@ -15,7 +15,7 @@
 <p><big>{{ $data->DESC }}    -------Описание</big></p>
 <p><big>{{ $data->AMOUNT }}  -------Оплаченная сумма</big></p>
 <p>{{ $data->CURRENCY }}  -------валюта</p>
-<p><big>{{ $data->RCTEXT }}  -------Успешно или нет</big></p>
+<p><big>{{ $data->RCTEXT }}  -------Успешно или нет(Только Approved успешно)</big></p>
 <p>{{ $data->CARD }}  -------Карта клиента</p>
 <p>{{ $data->EMAIL }} -------</p>
 <p>{{ $data->id }}  -------id в базе</p>
@@ -36,7 +36,7 @@
 <p>{{ $data->CHANNEL }}     -------CHANNEL</p>
 <p>{{ $data->ADDINFO }}     -------ADDINFO</p>
 <p><small>{{ $data->created_at }}</small></p>
-<a href="{{ route('OneDatal', $data->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
+<a href="{{ route('chekbank', $data->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
 </div>
 
 

@@ -9,16 +9,8 @@
 <body>
 <div class="container">
 <H1>Все Записи</H1>
-@foreach($data as $el)
-<div class="alert alert-info">
-<h3>{{ $el->ORDER }}</h3>
-<p>{{ $el->AMOUNT }}</p>
-<p>{{ $el->DESC }}</p>
-<p>{{ $el->RCTEXT }}</p>
-<p><small>{{ $el->created_at }}</small></p>
-<a href="{{ route('OneDatal', $el->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
-</div>
 
+@foreach($data as $el)
 
 @if ($el->RCTEXT == 'Approved')
   <div class="alert alert-success">
@@ -30,7 +22,7 @@
   <a href="{{ route('OneDatal', $el->id) }}"><button class="btn btn-warning">Детальнее</button></a> 
   </div>
 @else
-<div class="alert alert-info">
+<div class="alert alert-danger">
   <h3>{{ $el->ORDER }}</h3>
   <p>{{ $el->AMOUNT }}</p>
   <p>{{ $el->DESC }}</p>
