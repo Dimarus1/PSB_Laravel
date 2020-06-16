@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container">
+
 
 <?php
 $comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
@@ -68,6 +68,6 @@ $data = [
 
 ?>
 
-</div>
+
 </body>
 </html>
