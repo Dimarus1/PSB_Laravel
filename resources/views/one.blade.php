@@ -41,12 +41,12 @@
 <p>{{ $data->ADDINFO }}     -------ADDINFO</p>
 <p><small>{{ $data->created_at }}</small></p>
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
-</button></a></br>
+</button></a></br> </br> </br>
 
 <div id="BTNS" class="BTNS">
 <a href="{{ route('Ref', $data->id) }}"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ
 </button></a> 
-</div>
+</div> </br> </br> </br>
 
 <a href="javascript:void(0)" onclick="showHide('BTNS')">Открыть элемент</a><br/><br/>
         <div id="BTNS" style="display: none;">
