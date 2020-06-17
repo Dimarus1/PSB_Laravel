@@ -6,7 +6,7 @@
     <title>Здравкурорт оплата картой</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <style>
-   .BTNS { display: block; }
+   .BTNS { display: none; }
    
   </style>
 </head>
