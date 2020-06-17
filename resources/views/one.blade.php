@@ -44,7 +44,7 @@
 </button></a></br> </br> </br>
 
 <div id="BTNS" class="BTNS">
-<a href="{{ route('Ref', $data->id) }}"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ
+<a href="{{ route('Ref', $data->id) }} onClick="return window.confirm('СДЕЛАТЬ ВОЗВРАТ?')"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ
 </button></a> 
 </div> </br> </br> </br>
 
