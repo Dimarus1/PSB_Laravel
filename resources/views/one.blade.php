@@ -15,30 +15,30 @@
 <H1>Одна запись</H1>
 
 <div class="alert alert-info">
-<h3>{{ $data->ORDER }} -------Номер заказа</h3>
-<p><big>{{ $data->DESC }}    -------Описание</big></p>
-<p><big>{{ $data->AMOUNT }}  -------Оплаченная сумма</big></p>
-<p>{{ $data->CURRENCY }}  -------валюта</p>
+<h3>Номер заказа------- {{ $data->ORDER }} </h3>
+<p><big>Описание------- {{ $data->DESC }}    </big></p>
+<p><big>Оплаченная сумма------- {{ $data->AMOUNT }}  </big></p>
+<p>валюта------- {{ $data->CURRENCY }}  </p>
 <p><big>{{ $data->RCTEXT }}  -------Успешно или нет(Только Approved успешно)</big></p>
-<p>{{ $data->CARD }}  -------Карта клиента</p>
+<p>Карта клиента-------{{ $data->CARD }}  </p>
 <p>{{ $data->EMAIL }} -------</p>
-<p>{{ $data->id }}  -------id в базе</p>
-<p>{{ $data->TIMESTAMP }} -------дата время</p>
-<p>{{ $data->INT_REF }}    -------INT_REF</p>
-<p>{{ $data->MERCH_NAME }}     -------MERCH_NAME</p>
-<p>{{ $data->MERCHANT }}      -------MERCHANT</p>
-<p>{{ $data->TERMINAL }}     -------TERMINAL</p>
-<p>{{ $data->AUTHCODE }}     -------AUTHCODE</p>
-<p>{{ $data->TRTYPE }}  -------Trtype</p>
-<p>{{ $data->NONCE }}     -------NONCE</p>
-<p>{{ $data->BACKREF }}    -------BACKREF</p>
-<p>{{ $data->RESULT }} -------Результат</p>
-<p>{{ $data->RC }}    ------- RC</p>
-<p>{{ $data->P_SIGN }}    -------P_SIGN</p>
-<p>{{ $data->RRN }}    -------RRN</p>
-<p>{{ $data->NAME }}    -------NAME</p>
-<p>{{ $data->CHANNEL }}     -------CHANNEL</p>
-<p>{{ $data->ADDINFO }}     -------ADDINFO</p>
+<p>id в базе-------{{ $data->id }}  </p>
+<p>дата время-------{{ $data->TIMESTAMP }} </p>
+<p>INT_REF-------{{ $data->INT_REF }}    </p>
+<p>MERCH_NAME-------{{ {{ $data->MERCH_NAME }}</p>
+<p>MERCHANT-------{{ {{ $data->MERCHANT }}</p>
+<p>TERMINAL-------{{ {{ $data->TERMINAL }}</p>
+<p>AUTHCODE-------{{ {{ $data->AUTHCODE }}</p>
+<p>Trtype-------{{ {{ $data->TRTYPE }}</p>
+<p>NONCE-------{{ {{ $data->NONCE }}</p>
+<p>BACKREF-------{{ {{ $data->BACKREF }}</p>
+<p>Результат-------{{ {{ $data->RESULT }}</p>
+<p>RC-------{{ {{ $data->RC }}</p>
+<p>P_SIGN-------{{ {{ $data->P_SIGN }} </p>
+<p>RRN-------{{ {{ $data->RRN }}</p>
+<p>NAME-------{{ {{ $data->NAME }}</p>
+<p>CHANNEL-------{{ {{ $data->CHANNEL }}</p>
+<p>ADDINFO-------{{ {{ $data->ADDINFO }}</p>
 <p><small>{{ $data->created_at }}</small></p>
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
 </button></a></br> </br> </br>
