@@ -36,8 +36,14 @@
 <p>{{ $data->CHANNEL }}     -------CHANNEL</p>
 <p>{{ $data->ADDINFO }}     -------ADDINFO</p>
 <p><small>{{ $data->created_at }}</small></p>
-<a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке</button></a>
-<a href="{{ route('Ref', $data->id) }}"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ</button></a>  
+<a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке</button></a></br>
+
+<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+  Открыть кнопку
+</button>
+  <div id="demo" class="collapse in">
+  <a href="{{ route('Ref', $data->id) }}"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ</button></a> 
+  </div> 
 </div>
 
 
