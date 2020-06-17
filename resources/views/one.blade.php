@@ -25,20 +25,20 @@
 <p>id в базе-------{{ $data->id }}  </p>
 <p>дата время-------{{ $data->TIMESTAMP }} </p>
 <p>INT_REF-------{{ $data->INT_REF }}    </p>
-<p>MERCH_NAME-------{{ {{ $data->MERCH_NAME }}</p>
-<p>MERCHANT-------{{ {{ $data->MERCHANT }}</p>
-<p>TERMINAL-------{{ {{ $data->TERMINAL }}</p>
-<p>AUTHCODE-------{{ {{ $data->AUTHCODE }}</p>
-<p>Trtype-------{{ {{ $data->TRTYPE }}</p>
-<p>NONCE-------{{ {{ $data->NONCE }}</p>
-<p>BACKREF-------{{ {{ $data->BACKREF }}</p>
-<p>Результат-------{{ {{ $data->RESULT }}</p>
-<p>RC-------{{ {{ $data->RC }}</p>
-<p>P_SIGN-------{{ {{ $data->P_SIGN }} </p>
-<p>RRN-------{{ {{ $data->RRN }}</p>
-<p>NAME-------{{ {{ $data->NAME }}</p>
-<p>CHANNEL-------{{ {{ $data->CHANNEL }}</p>
-<p>ADDINFO-------{{ {{ $data->ADDINFO }}</p>
+<p>MERCH_NAME------- {{ $data->MERCH_NAME }}</p>
+<p>MERCHANT------- {{ $data->MERCHANT }}</p>
+<p>TERMINAL------- {{ $data->TERMINAL }}</p>
+<p>AUTHCODE------- {{ $data->AUTHCODE }}</p>
+<p>Trtype------- {{ $data->TRTYPE }}</p>
+<p>NONCE------- {{ $data->NONCE }}</p>
+<p>BACKREF------- {{ $data->BACKREF }}</p>
+<p>Результат------- {{ $data->RESULT }}</p>
+<p>RC------- {{ $data->RC }}</p>
+<p>P_SIGN------- {{ $data->P_SIGN }} </p>
+<p>RRN------- {{ $data->RRN }}</p>
+<p>NAME------- {{ $data->NAME }}</p>
+<p>CHANNEL------- {{ $data->CHANNEL }}</p>
+<p>ADDINFO------- {{ $data->ADDINFO }}</p>
 <p><small>{{ $data->created_at }}</small></p>
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
 </button></a></br> </br> </br>
