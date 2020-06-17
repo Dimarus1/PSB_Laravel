@@ -1,8 +1,8 @@
 <?php
 //Первая компонента ключа
-$comp1 = $CMP1;
+$comp1 = env('CMP1');
 //Вторая компонента ключа
-$comp2 = $CMP2;
+$comp2 = env('CMP2');
 //Данные для отправки на ПШ
 $data = [
 'amount' => number_format($_POST['AMOUNT'],2,'.',''),
