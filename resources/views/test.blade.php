@@ -1,8 +1,8 @@
 <?php
 //Первая компонента ключа
-$comp1 = env('CMP1');
+$comp1 = env('CMP2');
 //Вторая компонента ключа
-$comp2 = env('CMP2');
+$comp2 = env('CMP1');
 //Данные для отправки на ПШ
 $data = [
 'amount' => number_format($_POST['AMOUNT'],2,'.',''),
@@ -16,7 +16,7 @@ $data = [
 'email' => $_POST['EMAIL'],
 'timestamp' => gmdate("YmdHis"),
 'nonce' => bin2hex(random_bytes(16)),
-'backref' => 'https://' . 'zdravkurort.ru/chek_card',
+'backref' => 'https://zdravkurort.ru/chek_card',
 'notify_url' =>  'https://pay.zdravkurort.ru/back',
 'cardholder_notify' => $_POST['EMAIL'],
 'merchant_notify' => 'client@zdravkurort.ru',
@@ -32,7 +32,7 @@ $string .= strlen($data[$param]) . $data[$param];
 $string .= "-";
 }
 }
-$key = '0C5BB3C429D00BB0578C9B371EDE5005';//strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2))));
+$key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2))));
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 //Вывод формы для передачи запроса на ПШ
 echo "<form id='payment_form' action='https://3ds.payment.ru/cgi-bin/cgi_link' method = 'POST'>";
