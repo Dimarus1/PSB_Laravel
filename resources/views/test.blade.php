@@ -18,7 +18,7 @@ $data = [
 'nonce' => bin2hex(random_bytes(16)),
 'backref' => 'https://zdravkurort.ru/chek_card',
 'notify_url' =>  'https://pay.zdravkurort.ru/back',
-'cardholder_notify' => $_POST['EMAIL'],
+'cardholder_notify' => 'EMAIL',
 'merchant_notify' => 'EMAIL',
 'merchant_notify_email' => 'client@zdravkurort.ru'
 ];
