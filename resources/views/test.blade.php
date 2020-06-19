@@ -9,18 +9,18 @@ $data = [
 'currency' => 'RUB',
 'order' => preg_replace('~\D+~', '', ($_POST['ORDER'])),
 'desc' => 'www.zdravkurort.ru  '. $_POST['ORDER'],
-'terminal' => '79036777',
+'terminal' => '29517501',
 'trtype' => '1',
-'merch_name' => 'TEST_MERCH',
-'merchant' => '790367686219999',
+'merch_name' => 'ZDRAVKURORT',
+'merchant' => '000472229517501',
 'email' => $_POST['EMAIL'],
 'timestamp' => gmdate("YmdHis"),
 'nonce' => bin2hex(random_bytes(16)),
 'backref' => 'https://' . 'zdravkurort.ru/chek_card',
 'notify_url' =>  'https://pay.zdravkurort.ru/back',
-'cardholder_notify' => 'EMAIL',
-'merchant_notify' => 'EMAIL',
-'merchant_notify_email' => 'da@zdravkurort.ru'
+'cardholder_notify' => $_POST['EMAIL'],
+'merchant_notify' => 'client@zdravkurort.ru',
+'merchant_notify_email' => 'client@zdravkurort.ru'
 ];
 //Расчет P_SIGN
 $vars = ["amount","currency","order","merch_name","merchant","terminal","email","trtype","timestamp","nonce","backref"];
@@ -35,7 +35,7 @@ $string .= "-";
 $key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2))));
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 //Вывод формы для передачи запроса на ПШ
-echo "<form id='payment_form' action='https://test.3ds.payment.ru/cgi-bin/cgi_link' method = 'POST'>";
+echo "<form id='payment_form' action='https://3ds.payment.ru/cgi-bin/cgi_link' method = 'POST'>";
 foreach ($data as $param => $value) {
 echo "<input type='hidden' name='" . strtoupper($param) . "' value='" . $value . "'/>";
 }

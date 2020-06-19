@@ -9,7 +9,7 @@ class PSBController extends Controller {
     
  public function DMcommit (Request $req){// Функция записи в бд ответа Банка после платежа
 
-     if ($req->input('TERMINAL') == '79036777') {
+     if ($req->input('TERMINAL') == '29517501') {
          
          $DBPush = new PSBLaravel();
          
