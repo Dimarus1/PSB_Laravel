@@ -35,7 +35,7 @@ $string .= "-";
 $key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2))));
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
 //Вывод формы для передачи запроса на ПШ
-echo "<form id='payment_form' action='https://test.3ds.payment.ru/cgi-bin/cgi_link' method = 'POST'>";
+echo "<form id='payment_form' action='https://3ds.payment.ru/cgi-bin/cgi_link' method = 'POST'>";
 foreach ($data as $param => $value) {
 echo "<input type='hidden' name='" . strtoupper($param) . "' value='" . $value . "'/>";
 }
