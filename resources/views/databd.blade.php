@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-<H1>Все Записи</H1>
+<H1>Все Записи {{env('CMP1')}} -- {{env('CMP2')}}</H1>
 
 @foreach($data as $el)
 
