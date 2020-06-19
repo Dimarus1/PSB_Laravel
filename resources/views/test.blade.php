@@ -19,7 +19,7 @@ $data = [
 'backref' => 'https://zdravkurort.ru/chek_card',
 'notify_url' =>  'https://pay.zdravkurort.ru/back',
 'cardholder_notify' => $_POST['EMAIL'],
-'merchant_notify' => 'client@zdravkurort.ru',
+'merchant_notify' => 'EMAIL',
 'merchant_notify_email' => 'client@zdravkurort.ru'
 ];
 //Расчет P_SIGN
