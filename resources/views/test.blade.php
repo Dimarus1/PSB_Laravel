@@ -4,15 +4,24 @@ $comp1 = env('CMP1');
 //Вторая компонента ключа
 $comp2 = env('CMP2');
 //Данные для отправки на ПШ
+$orderchek='ZZ';
+$PSBTerminal='29517501';
+$PSBMerchant='000472229517501';
+
+if (stripos($_POST['ORDER'], $orderchek) !== false) {
+    $PSBTerminal='29517502';
+    $PSBMerchant='000472229517502';
+  }
+
 $data = [
 'amount' => number_format($_POST['AMOUNT'],2,'.',''),
 'currency' => 'RUB',
 'order' => preg_replace('~\D+~', '', ($_POST['ORDER'])),
 'desc' => 'www.zdravkurort.ru  '. $_POST['ORDER'],
-'terminal' => '29517501',
+'terminal' => $PSBTerminal,
 'trtype' => '1',
 'merch_name' => 'ZDRAVKURORT',
-'merchant' => '000472229517501',
+'merchant' => $PSBMerchant,
 'email' => $_POST['EMAIL'],
 'timestamp' => gmdate("YmdHis"),
 'nonce' => bin2hex(random_bytes(16)),
