@@ -11,8 +11,6 @@ $PSBMerchant='000472229517501';
 if (stripos($_POST['ORDER'], $orderchek) !== false) {
     $PSBTerminal='29517502';
     $PSBMerchant='000472229517502';
-    header("Location: https://yandex.ru");
-    die();
   }
 
 $data = [
