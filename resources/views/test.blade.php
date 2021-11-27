@@ -4,15 +4,15 @@ $comp1 = env('CMP1');
 //Вторая компонента ключа
 $comp2 = env('CMP2');
 //Данные для отправки на ПШ
-//$orderchek='ZZ';  кэшбэк
+$orderchek='ZZ';  //кэшбэк
 //$orderchek2='RR';  кэшбэк
 $PSBTerminal='29517501';
 $PSBMerchant='000472229517501';
 
-//if (stripos($_POST['ORDER'], $orderchek) !== false) {
-//    $PSBTerminal='29517502';                                    Кэшбэк
- //   $PSBMerchant='000472229517502';
-//  }
+if (stripos($_POST['ORDER'], $orderchek) !== false) {
+    $PSBTerminal='29517502';                                    //Кэшбэк
+    $PSBMerchant='000472229517502';
+}
 
 //if (stripos($_POST['ORDER'], $orderchek2) !== false) {
 //    $PSBTerminal='29517503';                                    Кэшбэк
