@@ -4,26 +4,30 @@ $comp1 = env('CMP1');
 //Вторая компонента ключа
 $comp2 = env('CMP2');
 //Данные для отправки на ПШ
-$orderchek='ZZ';  //кэшбэк
-//$orderchek2='RR';  кэшбэк
+$orderchek='ZZ';  		//кэшбэк за туры по россии
+$cashback='$'; 			// метка в описание заказа для проверки
+						//  $ - простой тур, $$ тур с кешбэком, $$$ тур детский кэшбэк
+//$orderchek2='RR';  	//кэшбэк за детские туры по россии
 $PSBTerminal='29517501';
 $PSBMerchant='000472229517501';
 
 if (stripos($_POST['ORDER'], $orderchek) !== false) {
-    $PSBTerminal='29517502';                                    //Кэшбэк
+    $PSBTerminal='29517502';                                    //Кэшбэк за туры по россии
     $PSBMerchant='000472229517502';
+    $cashback='$$';
 }
 
 //if (stripos($_POST['ORDER'], $orderchek2) !== false) {
-//    $PSBTerminal='29517503';                                    Кэшбэк
+//    $PSBTerminal='29517503';                                    Кэшбэк за детские туры по россии
 //    $PSBMerchant='000472229517503';
+//	  $cashback='$$$';
  // }
 
 $data = [
 'amount' => number_format($_POST['AMOUNT'],2,'.',''),
 'currency' => 'RUB',
 'order' => preg_replace('~\D+~', '', ($_POST['ORDER'])),
-'desc' => 'www.zdravkurort.ru  '. $_POST['ORDER'],
+'desc' => $cashback . ' www.zdravkurort.ru  '. $_POST['ORDER'],
 'terminal' => $PSBTerminal,
 'trtype' => '1',
 'merch_name' => 'ZDRAVKURORT',
