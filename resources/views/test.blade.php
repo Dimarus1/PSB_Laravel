@@ -7,7 +7,7 @@ $comp2 = env('CMP2');
 $orderchek='ZZ';  		//кэшбэк за туры по россии
 $cashback='$'; 			// метка в описание заказа для проверки
 						//  $ - простой тур, $$ тур с кешбэком, $$$ тур детский кэшбэк
-//$orderchek2='RR';  	//кэшбэк за детские туры по россии
+$orderchek2='RR';  		//кэшбэк за детские туры по россии
 $PSBTerminal='29517501';
 $PSBMerchant='000472229517501';
 
@@ -17,11 +17,11 @@ if (stripos($_POST['ORDER'], $orderchek) !== false) {
     $cashback='$$';
 }
 
-//if (stripos($_POST['ORDER'], $orderchek2) !== false) {
-//    $PSBTerminal='29517503';                                    Кэшбэк за детские туры по россии
-//    $PSBMerchant='000472229517503';
-//	  $cashback='$$$';
- // }
+if (stripos($_POST['ORDER'], $orderchek2) !== false) {
+    $PSBTerminal='29517503';                                    //Кэшбэк за детские туры по россии
+    $PSBMerchant='000472229517503';
+	  $cashback='$$$';
+}
 
 $data = [
 'amount' => number_format($_POST['AMOUNT'],2,'.',''),
